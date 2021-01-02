@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dbbl.dmssupport.controller.maincontroller.MainController">
+   <children>
+      <BorderPane fx:id="bp" layoutX="31.0" layoutY="14.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #c2c2a3;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="47.0" prefWidth="700.0" style="-fx-background-color: #999966;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="Menu" layoutX="14.0" layoutY="14.0" text="MENU" textFill="#a18585">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Images/menu1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+                  <Label fx:id="MenuBack" layoutX="14.0" layoutY="14.0" text="MENU" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Images/menu1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane fx:id="slider" prefHeight="380.0" prefWidth="176.0" style="-fx-background-color: #999966;" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox layoutX="38.0" layoutY="14.0" prefHeight="339.0" prefWidth="176.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="14.0">
+                     <children>
+                        <JFXButton onMouseClicked="#page1" prefHeight="38.0" prefWidth="176.0" text="Page 1" textAlignment="JUSTIFY">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font></JFXButton>
+                        <JFXButton onMouseClicked="#page2" prefHeight="38.0" prefWidth="176.0" text="Page 2">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton onMouseClicked="#page3" prefHeight="38.0" prefWidth="183.0" text="Page 3">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton onMouseClicked="#page4" prefHeight="38.0" prefWidth="176.0" text="Page 4">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton onMouseClicked="#page5" prefHeight="38.0" prefWidth="176.0" text="Page 5">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton onMouseClicked="#page6" prefHeight="38.0" prefWidth="176.0" text="Page 6">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+               </children></AnchorPane>
+         </left>
+         <center>
+            <AnchorPane fx:id="ap" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
